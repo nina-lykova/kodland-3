@@ -31,4 +31,4 @@ async def long(ctx, count_long = 10):
 async def emojis(ctx):
     await ctx.send(random.choice('☺ ☻ ☹ シ ツ ʕʘ‿ಠʔ ￣ヘ¯ ◔◡‿◡◔ ⊙_ರೃ (͡๏̯͡๏)'))
 
-bot.run("MTI3NzI2Mjc5MzQyMjE0NzY2Nw.GQ79i-.oD68tKaXZ5VmDYI_5-Yi8ZeklEs6dg32txiHkU")
+bot.run("-----")
