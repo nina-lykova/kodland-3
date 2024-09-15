@@ -8,6 +8,8 @@ intents.message_content = True
 # Создаем бота в переменной client и передаем все привелегии
 bot = commands.Bot(command_prefix='$', intents=intents)
 
+fact = ['Более 99% населения мира дышат воздухом, который превышает пределы допустимых стандартов ВОЗ.', 'Сильный шум может оказывать негативное влияние на здоровье человека, особенно на слух.', 'К 2050 году в океане будет больше пластика, чем рыбы по весу.']
+
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
@@ -30,5 +32,9 @@ async def long(ctx, count_long = 10):
 @bot.command()
 async def emojis(ctx):
     await ctx.send(random.choice('☺ ☻ ☹ シ ツ ʕʘ‿ಠʔ ￣ヘ¯ ◔◡‿◡◔ ⊙_ರೃ (͡๏̯͡๏)'))
+
+@bot.command()
+async def facts(ctx):
+    await ctx.send(random.choice(fact))
 
 bot.run("-----")
